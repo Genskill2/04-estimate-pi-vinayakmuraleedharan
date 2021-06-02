@@ -40,8 +40,8 @@ int main(void) {
 }
 float mc_pi(int n)
 {
-    int circle = 0;
-    int square = 0;
+    float circle = 0;
+    float square = 0;
     float x,y;
 for(int i=1; i<=n; i++){
     x= frandom();
