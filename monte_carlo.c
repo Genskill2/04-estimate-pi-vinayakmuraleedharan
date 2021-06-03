@@ -39,19 +39,23 @@ int main(void) {
   }
 }
 float mc_pi(int n)
-{
-    float circle = 0;
-    float square = 0;
-    float x,y;
-for(int i=1; i<=n; i++){
-    x= frandom();
-    y= frandom();
-    if (((x*x)+ (y*y))<=1){circle++;}
-    else {square++;}
-} square = square + circle;
- float pi = 4*circle/square;
-return pi;
-}
-
+{ 
+  float circle = 0.0;
+  float square = 0.0;
+  for(int i=0; i<n; ++i)
+  { 
+    float x = frandom();
+    float y = frandom();
+    float d = sqrt(x*x + y*y); 
+    if (d<=1) 
+    {
+     circle++;
+    }
+    square++;
+  }  
+  float pi = (4*circle_point/square_point);
+  return pi;
+} 
+ 
 
 
